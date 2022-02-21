@@ -10,12 +10,6 @@ function cd
     ls -a
 end
 
-# lsの色を見やすく変更
-if test ! -e ~/.dircolors/dircolors.ansi-dark
-    git clone https://github.com/seebi/dircolors-solarized.git ~/.dircolors
-end
-eval (dircolors -c ~/.dircolors/dircolors.ansi-dark)
-
 # aliases for git
 alias g="git"
 alias gs="git status"
