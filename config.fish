@@ -12,23 +12,20 @@ end
 
 # aliases for git
 alias g="git"
-alias gs="git status"
-alias gc="git checkout"
-alias gd="git diff"
 alias ga="git add"
-alias gca="git commit -a -m"
-alias gcm="git commit -m"
-alias gbd="git branch -D"
-alias gp="git push"
 alias gb="git branch"
-alias gcob="git checkout -b"
-alias gco="git checkout"
 alias gba="git branch -a"
-alias glo="git log --graph --date=iso --pretty='[%ad]%C(auto) %h%d %Cgreen%an%Creset : %s'"
-alias gll="git log --pretty=format:'%C(yellow)%h%Cred%d\\ %Creset%s%Cblue\\ [%cn]' --decorate --numstat"
+alias gbd="git branch --merged | grep -v -e develop -e (git branch --contains) | xargs git branch -d"
+alias gc="git checkout"
+alias gcb="git checkout -b"
+alias gcm="git commit -m"
+alias gd="git diff"
 alias gfp="git fetch --prune"
+alias gll="git log --pretty=format:'%C(yellow)%h%Cred%d\\ %Creset%s%Cblue\\ [%cn]' --decorate --numstat"
+alias glo="git log --graph --date=iso --pretty='[%ad]%C(auto) %h%d %Cgreen%an%Creset : %s'"
+alias gp="git push"
+alias gs="git status"
 
 # aliases
 alias rm="rm -rf"
 alias cp="cp -r"
-
